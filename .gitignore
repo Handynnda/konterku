@@ -1,15 +1,39 @@
+# === Android Studio & IntelliJ ===
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# === Gradle & Build ===
+.gradle/
+build/
+.cxx/
+.externalNativeBuild/
+captures/
+output-metadata.json
+
+# === Local Properties ===
 local.properties
+/local.properties
+
+# === OS & Log Files ===
+.DS_Store
+*.log
+
+# === APK, Profiling & Generated Files ===
+*.apk
+*.hprof
+
+# === Keystore Files ===
+*.jks
+*.keystore
+
+# === Google Services & Firebase ===
+google-services.json
