@@ -327,7 +327,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Rp.49.500"
+                        android:text="Rp.51.500"
                         android:textColor="@android:color/black"
                         android:textSize="25sp"/>
 
