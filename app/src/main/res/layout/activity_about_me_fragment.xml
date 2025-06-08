@@ -45,6 +45,7 @@
                     android:id="@+id/textView7"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
                     android:text="Email Akun"
@@ -67,6 +68,7 @@
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:text="Nama Akun"
@@ -90,6 +92,7 @@
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginTop="10dp"
                     android:text="Tanggal Registrasi"
                     android:textSize="20sp"
