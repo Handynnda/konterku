@@ -39,6 +39,7 @@
             android:layout_marginTop="100dp"
             android:textColor="@color/black"
             android:layout_marginStart="78dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="email"/>
@@ -79,6 +80,7 @@
             android:layout_marginTop="30dp"
             android:textColor="@color/black"
             android:layout_marginStart="78dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="Kata Sandi"/>
@@ -199,6 +201,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:layout_marginStart="135dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"

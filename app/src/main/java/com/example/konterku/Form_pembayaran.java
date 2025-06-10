@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ public class Form_pembayaran extends AppCompatActivity {
 
     TextView tvNomor, tvPaket, tvPayment;
     Button btnBayar;
+    ImageView imageback;
 
     String nomor, paket, metode;
     int harga;
@@ -39,6 +41,7 @@ public class Form_pembayaran extends AppCompatActivity {
         tvPaket = findViewById(R.id.tvpaket);
         tvPayment = findViewById(R.id.tvPayment);
         btnBayar = findViewById(R.id.btnbayar);
+        imageback = findViewById(R.id.backbutton);
 
         // Ambil data dari intent
         nomor = getIntent().getStringExtra("nomor");
@@ -49,6 +52,12 @@ public class Form_pembayaran extends AppCompatActivity {
         tvNomor.setText("Nomor Pembeli: " + nomor);
         tvPaket.setText("Paket Pembelian: " + paket);
         tvPayment.setText("Metode Pembayaran: " + metode);
+
+        imageback.setOnClickListener(v -> {
+            Intent intent = new Intent(Form_pembayaran.this, Dashboard.class);
+            startActivity(intent);
+            finish();
+        });
 
         btnBayar.setOnClickListener(v -> {
             if (extractHargaFromPaket(paket)) {
@@ -115,7 +124,6 @@ public class Form_pembayaran extends AppCompatActivity {
         });
     }
 
-    // ✅ PERBAIKAN: Menyimpan ke Pembelian/{UID}/{autoID}
     private void simpanDataKeFirebase() {
         String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference db = FirebaseDatabase.getInstance()
@@ -159,7 +167,12 @@ public class Form_pembayaran extends AppCompatActivity {
         builder.setTitle("Pembayaran Gagal");
         builder.setMessage(message);
         builder.setCancelable(false);
-        builder.setPositiveButton("OK", null);
+        builder.setPositiveButton("OK", (dialog, which) -> {
+            // Pindah ke halaman topup setelah tekan OK
+            Intent intent = new Intent(Form_pembayaran.this, form_topup.class);
+            startActivity(intent);
+            finish();
+        });
         builder.show();
     }
 

@@ -71,18 +71,21 @@
             android:id="@+id/tabProduk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Produk" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabHistori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Histori" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabAboutMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Profil" />
     </com.google.android.material.tabs.TabLayout>
 

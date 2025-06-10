@@ -3,6 +3,7 @@ package com.example.konterku;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class form_kuota extends AppCompatActivity {
 
     EditText inputNomor;
+    ImageView backbutton;
     final String metodePembayaran = "Saldo Aplikasi";
 
     @Override
@@ -19,6 +21,13 @@ public class form_kuota extends AppCompatActivity {
         setContentView(R.layout.activity_form_kuota);
 
         inputNomor = findViewById(R.id.inputnomor);
+        backbutton = findViewById(R.id.buttonbackk);
+
+        backbutton.setOnClickListener(v -> {
+            Intent intent = new Intent(form_kuota.this, Dashboard.class);
+            startActivity(intent);
+            finish();
+        });
 
         // Daftar produk kuota (ID View, Nama Paket, Harga)
         addKuota(R.id.kuota1, "1GB", "Rp.12.000");

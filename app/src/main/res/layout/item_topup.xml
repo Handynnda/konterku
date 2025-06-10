@@ -9,6 +9,7 @@
         android:id="@+id/tvNominal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Rp. 0"
         android:textStyle="bold"
         android:textSize="16sp" />
@@ -17,6 +18,7 @@
         android:id="@+id/tvMetode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Metode: -"
         android:textSize="14sp" />
 
@@ -24,6 +26,7 @@
         android:id="@+id/tvTanggal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Tanggal: -"
         android:textSize="14sp" />
 </LinearLayout>

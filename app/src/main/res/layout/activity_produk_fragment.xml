@@ -19,7 +19,7 @@
                 <LinearLayout
                     android:id="@+id/menusaldo"
                     android:layout_width="350dp"
-                    android:layout_height="100dp"
+                    android:layout_height="105dp"
                     android:layout_marginTop="15dp"
                     android:layout_gravity="center"
                     android:background="@drawable/rounded_corner"
@@ -45,13 +45,11 @@
 
                     <ImageView
                         android:id="@+id/buttontopup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:elevation="14dp"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/ic_topup"
                         android:clickable="true"
-                        android:focusable="true" >
-                    </ImageView>
+                        android:focusable="true" />
 
                         <TextView
                             android:id="@+id/textisi"

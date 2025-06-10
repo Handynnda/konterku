@@ -25,6 +25,7 @@
         android:textSize="30sp"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:text="Reset password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

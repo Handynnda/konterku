@@ -24,12 +24,14 @@
 
                 <TextView
                     android:id="@+id/textakun"
-                    android:layout_width="match_parent"
+                    android:layout_width="380dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
                     android:text="AKUN"
                     android:textAlignment="center"
                     android:textColor="@color/black"
+                    android:background="@drawable/rounded_corner2"
                     android:textSize="30dp"
                     android:textStyle="bold" />
 
@@ -48,6 +50,7 @@
                     android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:layout_marginTop="50dp"
+                    android:textColor="@color/black"
                     android:text="Email Akun"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -71,6 +74,7 @@
                     android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
                     android:text="Nama Akun"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -94,6 +98,7 @@
                     android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
                     android:text="Tanggal Registrasi"
                     android:textSize="20sp"
                     android:textStyle="bold" />

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class form_pulsa extends AppCompatActivity {
 
     EditText inputNomor;
+    ImageView backbutton;
     final String metodePembayaran = "Saldo Aplikasi";
 
     @Override
@@ -20,6 +22,13 @@ public class form_pulsa extends AppCompatActivity {
         setContentView(R.layout.activity_form_pulsa);
 
         inputNomor = findViewById(R.id.inputnomor);
+        backbutton = findViewById(R.id.buttonback);
+
+        backbutton.setOnClickListener(v -> {
+            Intent intent = new Intent(form_pulsa.this, Dashboard.class);
+            startActivity(intent);
+            finish();
+        });
 
         // Set listener ke masing-masing produk
         setClickListener(R.id.Produk1, "Pulsa 5rb", "Rp.6.650");
